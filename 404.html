@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — Gastro Station</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-content {
+            max-width: 480px;
+        }
+        .error-code {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 10vw, 6rem);
+            color: var(--light-gray);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .error-content h1 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 1rem;
+        }
+        .error-content p {
+            font-size: 1rem;
+            color: var(--slate);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1>Wrong turn.</h1>
+            <p>This page doesn't exist — but the path to food truck compliance does.</p>
+            <a href="/" class="btn btn-primary">Back to Home</a>
+        </div>
+    </section>
+</body>
+</html>

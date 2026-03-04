@@ -879,6 +879,19 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     color: var(--coral-light);
 }
 
+.module-status:has(+ .module-icon + h3 + p) {
+    /* fallback — overridden below for Coming Soon */
+}
+
+.module-future .module-status {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* "Coming Soon" badge — amber to sit between Planned and active */
+.module-future .module-status[data-status="coming-soon"] {
+    color: var(--amber);
+}
+
 .module-icon {
     width: 36px;
     height: 36px;

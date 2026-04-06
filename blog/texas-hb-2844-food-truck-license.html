@@ -1145,7 +1145,9 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script>
         // Smooth scroll for TOC links
         document.querySelectorAll('.sidebar-toc a[href^="#"]').forEach(link => {
             link.addEventListener('click', e => {
@@ -1158,13 +1160,7 @@
                 }
             });
         });
-
-        // Nav scroll behavior (matches main site pattern)
-        const nav = document.getElementById('nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 20);
-        });
-
-        // Mobile nav toggle
-        const toggle = document.querySelector('.nav-toggle');
+    </script>
+    </body>
+    </html>
      

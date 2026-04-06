@@ -198,17 +198,23 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     align-items: center;
     justify-content: space-between;
     height: 72px;
+    gap: 0.75rem;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
+    min-width: 0;
+    flex: 1 1 auto;
+    max-width: 340px;
 }
 
 .nav-logo-img {
-    height: 44px;
-    width: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 44px;
 }
 
 .nav-links {
@@ -250,6 +256,7 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     border: none;
     cursor: pointer;
     padding: 4px;
+    flex: 0 0 auto;
 }
 
 .nav-toggle span {
@@ -812,6 +819,10 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     flex-wrap: wrap;
 }
 
+.pricing-details span {
+    overflow-wrap: anywhere;
+}
+
 .pricing-divider {
     color: var(--light-gray);
 }
@@ -1257,6 +1268,8 @@ input::placeholder {
 
     .nav-links { display: none; }
     .nav-toggle { display: flex; }
+    .nav-logo { max-width: calc(100% - 56px); }
+    .nav-logo-img { max-height: 36px; }
 
     .hero {
         padding: 8rem 0 4rem;
@@ -1292,6 +1305,10 @@ input::placeholder {
     .signup-wrapper {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+    }
+
+    .signup-form-wrapper {
+        padding: 1.5rem;
     }
 
     .form-row {

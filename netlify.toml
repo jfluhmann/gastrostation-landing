@@ -21,6 +21,11 @@
   to = "/#comply"
   status = 301
 
+[[redirects]]
+  from = "/meet"
+  to = "https://calendar.proton.me/bookings#jxR_azhLAAdeOn1dz5TGqGkK0SLfUBScpmK0vTW6KP0="
+  status = 301
+
 # Form submission handling
 # Netlify automatically handles forms with data-netlify="true"
 
